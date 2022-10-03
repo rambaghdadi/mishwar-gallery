@@ -151,5 +151,6 @@ export async function getStaticProps(context) {
 			artwork,
 			artworks,
 		},
+		revalidate: 10,
 	}
 }
