@@ -1,0 +1,58 @@
+.main {
+	margin-top: 12rem;
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 3rem;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.imgContainer img {
+	border: 4px solid black !important;
+}
+
+.main h1 {
+	font-size: 3rem;
+}
+
+.main p {
+	font-size: 1.6rem;
+}
+
+@media (min-width: 850px) {
+	.main {
+		flex-direction: row;
+		align-items: center;
+		margin: 20rem auto 10rem auto;
+		padding: 0 6rem;
+		gap: 10rem;
+	}
+
+	.text {
+		flex: 0 1 auto;
+		max-width: 60rem;
+	}
+
+	.imgContainer {
+		flex: 0 0 40%;
+	}
+
+	.text h1 {
+		font-size: 5rem;
+	}
+
+	.main p {
+		font-size: 1.7rem;
+	}
+
+	.main button {
+		font-size: 1.7rem;
+		align-self: flex-start;
+	}
+}

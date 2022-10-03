@@ -1,0 +1,26 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+
+@media (min-width: 550px) {
+	.main {
+		max-width: 1200px;
+		margin: 5rem auto;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-around;
+	}
+}
+@media (min-width: 1000px) {
+	.main {
+		max-width: 1200px;
+		margin: 5rem auto;
+		display: flex;
+		flex-direction: row;
+
+		justify-content: space-between;
+	}
+}

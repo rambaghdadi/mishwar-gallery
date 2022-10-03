@@ -1,0 +1,65 @@
+.form select {
+	width: 100%;
+	padding: 0.5rem 1rem;
+	font-size: 1.6rem;
+	font-family: var(--main-font);
+	text-align: center;
+	text-transform: uppercase;
+	border: 1px solid var(--accent-color);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+	background-repeat: no-repeat;
+	background-position-x: 97%;
+	background-position-y: 5px;
+}
+
+.form ul {
+	display: none;
+}
+
+@media (min-width: 700px) {
+	.form {
+		/* display: flex;
+		align-items: center; */
+		/* text-align: center; */
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+	.form select {
+		display: none;
+	}
+
+	.form ul {
+		padding: 0 5rem;
+		display: flex;
+		gap: 2rem;
+		list-style: none;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		flex-wrap: wrap;
+	}
+
+	.form ul button {
+		background-color: rgba(172, 146, 0, 0.327);
+		border-radius: 10px;
+		padding: 0.7rem 1.2rem;
+		cursor: pointer;
+		user-select: none;
+		border: none;
+		transition: all 0.2s;
+		font-family: var(--main-font);
+		font-size: 1.4rem;
+	}
+
+	.form ul option:active {
+		transform: translate(0, 5px);
+	}
+
+	.selected {
+		color: white;
+		background-color: var(--accent-color) !important;
+	}
+}

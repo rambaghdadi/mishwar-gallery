@@ -1,0 +1,34 @@
+.main {
+	padding: 0 2rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.gallery img {
+	width: 100% !important;
+	border: 4px solid black !important;
+	transition: all 0.4s;
+}
+
+.gallery img:hover {
+	transform: scale(140%) rotate(10deg);
+}
+
+@media (min-width: 700px) {
+	.main {
+		gap: 8rem;
+		max-width: 900px;
+		margin: 0 auto;
+		margin-bottom: 20rem;
+	}
+
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-items: center;
+		align-items: center;
+		gap: 1rem;
+	}
+}

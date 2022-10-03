@@ -1,0 +1,45 @@
+.main {
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.main p {
+	font-size: 1.6rem;
+}
+
+.outro {
+	display: flex;
+	flex-direction: column;
+	gap: 0rem;
+}
+
+@media (min-width: 700px) {
+	.main {
+		padding: 0 10rem;
+		/* flex-direction: row;
+		gap: 10rem; */
+	}
+	.img {
+		display: none;
+	}
+}
+
+@media (min-width: 1000px) {
+	.main {
+		padding: 0 30rem;
+		flex-direction: row;
+		gap: 10rem;
+	}
+	.img {
+		display: block;
+		flex: 1 0 40%;
+	}
+}

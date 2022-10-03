@@ -1,0 +1,16 @@
+.image {
+	position: relative;
+}
+
+.image::before {
+	content: "";
+	background-color: rgba(184, 157, 79, 0.2);
+
+	width: 95%;
+	height: 95%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotate(-10deg);
+}

@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	user-select: none;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Poppins", serif;
+	color: #333;
+	position: relative;
+
+	--accent-color: rgb(184, 157, 79);
+	--main-font: "Poppins", serif;
+	--secondary-font: "Playfair Display", serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.loader {
+	position: absolute;
+	top: 50vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
