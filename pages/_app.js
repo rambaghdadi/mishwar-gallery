@@ -6,7 +6,6 @@ import { useEffect, useState } from "react"
 import { Loader } from "@mantine/core"
 
 function MyApp({ Component, pageProps: { ...pageProps } }) {
-	// const authRequired = ["/admin"]
 	const [loading, setLoading] = useState(false)
 	const router = useRouter()
 
