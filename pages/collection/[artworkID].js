@@ -93,7 +93,25 @@ export default function Artwork({ artwork, artworks }) {
 	)
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticPaths() {
+	const response = await fetch(
+		`https://mishwar-gallery-backend.onrender.com/api/artworks?populate=*`
+	)
+	const data = await response.json()
+
+	const paths = data.data.map((artwork) => {
+		return {
+			params: { artworkID: artwork.id.toString() },
+		}
+	})
+
+	return {
+		paths,
+		fallback: false,
+	}
+}
+
+export async function getStaticProps(context) {
 	let artwork
 	let artworks = []
 
